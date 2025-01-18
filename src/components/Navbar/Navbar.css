@@ -1,0 +1,70 @@
+/* Global font styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* You can change this to any custom font */
+  }
+  
+  /* Navbar container */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for the navbar */
+    padding: 15px 30px;
+  }
+  
+  /* Left section: Login area */
+  .navbar__login {
+    color: white;
+    font-size: 18px;
+  }
+  
+  .navbar__user-name {
+    font-weight: bold;
+  }
+  
+  /* Right section: Navigation Links */
+  .navbar__links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px; /* Space between items */
+  }
+  
+  .navbar__item {
+    position: relative;
+  }
+  
+  .navbar__link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 5px; /* Adds space for the underline */
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Underline animation effect on hover */
+  .navbar__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ff6347; /* Underline color */
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%); /* Center the underline initially */
+  }
+  
+  /* When the link is hovered, the underline expands equally from the center to both sides */
+  .navbar__link:hover::after {
+    width: 100%; /* Expands to full width */
+    left: 50%; /* Start from the left edge of the link */
+  }
+  
+  .navbar__link:hover {
+    color: #ff6347; /* Hover color */
+  }
+  
