@@ -1,17 +1,60 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
+import { useState ,useEffect} from 'react';
+import menu_icon from '../../assets/menu-icon.png';
+import location from '../../assets/pin.png';
+import call from '../../assets/phone-call.png';
+import insta from '../../assets/instagram.png';
+import facebook from '../../assets/facebook-app-symbol.png';
+import linkdin from '../../assets/linkedin.png';
+import twitter from '../../assets/twitter.png';
 import './Navbar.css' //Import Link for navigation
 
 const Navbar = () => {
+
+  const [sticky,setSticky] = useState(false);
+
+  useEffect(()=>{
+    window.addEventListener('scroll',()=>{
+    window.scrollY > 40 ? setSticky(true): setSticky(false);
+    })
+  },[]);
+
+  const [mobileMenu,setMobileMenu] = useState(false);
+  const togglemenu = ()=>{
+       mobileMenu? setMobileMenu(false):setMobileMenu(true);
+  }
   return (
-    <nav className="navbar">
-      {/* Left section: User Login */}
+    <nav className= {`navbar ${sticky ? 'dark_nav':''}`}>
+         <div className="topbar">
+        <div className="location">
+          <img src={location} alt="" className='images' />
+          <p>Mystique Wonders,B-Wing,Flat-no:503,narhe,Pune. </p>
+        </div>
+        <div className="socail_accounts">
+          <div className="call">
+          <img src={call} alt=""  className='images'/>
+        <p>+91 9359955164</p>
+          </div>
+       
+        <img src={insta} alt=""  className='images'/>
+        <img src={facebook} alt=""  className='images'/>
+        <img src={twitter} alt=""  className='images'/>
+        <img src={linkdin} alt=""  className='images'/>
+        
+         
+        </div>
+      </div>
+
+
+      <div className="logoandlinks">
+        {/* Left section: User Login */}
       <div className="navbar__login">
-        <span className="navbar__user-name">Hello, John</span>
+        <span className="navbar__user-name">Logo and Name </span>
       </div>
 
       {/* Right section: Navigation Links */}
-      <ul className="navbar__links">
+      <ul className={mobileMenu?"":"hide_mobile_menu"}>
         <li className="navbar__item">
           <Link to="/" className="navbar__link">Home</Link>
         </li>
@@ -25,6 +68,9 @@ const Navbar = () => {
           <Link to="/contact" className="navbar__link">Contact</Link>
         </li>
       </ul>
+      <img src={menu_icon} alt=""  className='menu-icon' onClick={togglemenu}/>
+      </div>
+      
     </nav>
   );
 };

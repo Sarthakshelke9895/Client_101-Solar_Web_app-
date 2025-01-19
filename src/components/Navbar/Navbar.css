@@ -9,16 +9,61 @@
   /* Navbar container */
   .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333; /* Dark background for the navbar */
-    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(147, 124, 230);
+    flex-direction: column;
+  /* Dark background for the navbar */
+   
   }
+  .topbar{
+    background-color: rgb(136, 136, 136);
+    padding: 10px 20px ;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.socail_accounts{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.location{
+  display: flex;
+  align-items: center;
+}
+.call{
+  display: flex;
+  align-items: center;
+}
+
+.images{
+  width: 25px;
+  height: 25px;
+}
+.images:hover{
+  cursor: pointer;
+}
+.logoandlinks{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
   
   /* Left section: Login area */
   .navbar__login {
-    color: white;
-    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .navbar__user-name {
@@ -26,19 +71,27 @@
   }
   
   /* Right section: Navigation Links */
-  .navbar__links {
-    list-style-type: none;
-    display: flex;
-    gap: 30px; /* Space between items */
-  }
+
   
   .navbar__item {
     position: relative;
+  
   }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 25x;
+    margin: 25px 20px;
+    transition: 5ms;
+    pointer-events: auto; cursor: pointer;
+    
+}
+
+
   
   .navbar__link {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 16px;
     padding-bottom: 5px; /* Adds space for the underline */
     position: relative;
@@ -52,8 +105,8 @@
     bottom: 0;
     left: 50%;
     width: 0;
-    height: 2px;
-    background-color: #ff6347; /* Underline color */
+    height: 1px;
+    background-color: #ddff47; /* Underline color */
     transition: width 0.3s ease, left 0.3s ease;
     transform: translateX(-50%); /* Center the underline initially */
   }
@@ -65,6 +118,61 @@
   }
   
   .navbar__link:hover {
-    color: #ff6347; /* Hover color */
+    color:#ddff47; /* Hover color */
+  }
+
+  .menu-icon {
+    display: none; /* Initially hidden */
+    height: 20px;
+    cursor: pointer;
+    background-image: url('../../assets/menu-icon.png'); /* Replace with your menu icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .dark_nav{
+    background-color:#212EA0;
+    transition: 0.5s
+    
+}
+  
+  @media (max-width: 480px) {
+    
+    
+  .navbar{
+    padding: 15px 10px;
+  }
+
+  
+    .navbar__item {
+      text-align: left;
+      padding: 5px 0;
+    }
+    .hide_mobile_menu{
+      right: -300px;
+    }
+    .menu-icon{
+      display: block;
+      width: 30px;
+      cursor: pointer;
+  }
+    nav ul{
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 140px;
+    padding-top:20px;
+    transition: 0.6s;
+    background-color:rgb(54, 54, 54);
+    margin-top: 50px;
+    }
+      nav ul li{
+    display: block;
+    margin: 0px 20px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0;
+      }
   }
   

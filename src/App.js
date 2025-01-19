@@ -12,7 +12,7 @@ const App = () => {
     <div className='container'>
           <Router>
       <Navbar />
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: '120px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
