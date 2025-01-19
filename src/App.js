@@ -1,18 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Services from './components/Services/Services';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
-const Home = () => <div>Home Page</div>;
-const About = () => <div>About Page</div>;
-const Services = () => <div>Services Page</div>;
-const Contact = () => <div>Contact Page</div>;
+
 
 const App = () => {
   return (
     <div className='container'>
           <Router>
       <Navbar />
-      <div style={{ marginTop: '120px' }}>
+      <div style={{ marginTop: '160px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

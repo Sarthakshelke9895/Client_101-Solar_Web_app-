@@ -8,6 +8,7 @@ import insta from '../../assets/instagram.png';
 import facebook from '../../assets/facebook-app-symbol.png';
 import linkdin from '../../assets/linkedin.png';
 import twitter from '../../assets/twitter.png';
+import weblogo from '../../assets/weblogo.PNG'
 import './Navbar.css' //Import Link for navigation
 
 const Navbar = () => {
@@ -50,7 +51,12 @@ const Navbar = () => {
       <div className="logoandlinks">
         {/* Left section: User Login */}
       <div className="navbar__login">
-        <span className="navbar__user-name">Logo and Name </span>
+        <img src={weblogo}  id="weblogo" alt="logo" />
+        <div className="textforlogo">
+        <p id="heading"> SOYRAA SOLAR</p>
+        <p id='subheading'>Solar Water Heater System</p>
+        </div>
+      
       </div>
 
       {/* Right section: Navigation Links */}
