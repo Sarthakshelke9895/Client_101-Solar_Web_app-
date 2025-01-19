@@ -8,11 +8,24 @@
 
 :root {
     --primary-yellow: #FFD700;
-    --primary-blue: #87CEEB;
-    --primary-green: #645196;
+    --primary-blue: #212EA0;
+    --primary-pink: #645196;
     --secondary-orange: #FFA500;
     --neutral-grey: #F5F5F5;
     --accent-deep-blue: #0047AB;
     --white: #FFFFFF;
     --dark-grey: #333333;
 }
+.Elements{
+    padding-top: 140px;
+    
+}
+/* Global custom scrollbar styles */
+
+@media (max-width: 480px){
+    .Elements{
+        padding-top: 70px;
+    
+    }
+}
+  
