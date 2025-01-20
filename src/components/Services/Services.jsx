@@ -28,7 +28,7 @@ const Services = () => {
 
   <div class="services-cards">
     <div class="service-card">
-      <img src={download7} alt="Service Image" class="service-image"/>
+      <img src={download7} alt="Service " class="service-image"/>
       <div class="logo-container">
         <img src={serviceslogo1} alt="Logo" class="service-logo"/>
       </div>
@@ -39,7 +39,7 @@ const Services = () => {
     </div>
 
     <div class="service-card">
-      <img src={download2} alt="Service Image" class="service-image"/>
+      <img src={download2} alt="Service " class="service-image"/>
       <div class="logo-container">
         <img src={serviceslogo2} alt="Logo" class="service-logo"/>
       </div>
@@ -50,7 +50,7 @@ const Services = () => {
     </div>
 
     <div class="service-card">
-      <img src={download3} alt="Service Image" class="service-image"/>
+      <img src={download3} alt="Service " class="service-image"/>
       <div class="logo-container">
         <img src={serviceslogo3} alt="Logo" class="service-logo"/>
       </div>
@@ -61,7 +61,7 @@ const Services = () => {
     </div>
 
     <div class="service-card">
-      <img src={download4} alt="Service Image" class="service-image"/>
+      <img src={download4} alt="Service " class="service-image"/>
       <div class="logo-container">
         <img src={serviceslogo4} alt="Logo" class="service-logo"/>
       </div>
@@ -72,7 +72,7 @@ const Services = () => {
     </div>
 
     <div class="service-card">
-      <img src={download5} alt="Service Image" class="service-image"/>
+      <img src={download5} alt="Service " class="service-image"/>
       <div class="logo-container">
         <img src={serviceslogo5} alt="Logo" class="service-logo"/>
       </div>
@@ -83,7 +83,7 @@ const Services = () => {
     </div>
 
     <div class="service-card">
-      <img src={download6} alt="Service Image" class="service-image"/>
+      <img src={download6} alt="Service " class="service-image"/>
       <div class="logo-container">
         <img src={serviceslogo6} alt="Logo" class="service-logo"/>
       </div>
