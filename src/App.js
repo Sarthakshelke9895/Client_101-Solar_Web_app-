@@ -7,6 +7,8 @@ import Services from './components/Services/Services';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Reviews from './components/Reviews/Reviews';
+import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 
 
@@ -15,6 +17,7 @@ const App = () => {
     <div className='container'>
           <Router>
       <Navbar />
+      <ScrollToTop />
       
       <div className='Elements'>
         <Routes>
@@ -25,6 +28,8 @@ const App = () => {
         </Routes>
       </div>
       <Reviews/>
+      
+      <Footer/>
     </Router>
     </div>
 

@@ -13,6 +13,12 @@ import './Navbar.css' //Import Link for navigation
 
 const Navbar = () => {
 
+
+
+  const handleLogoClick = () => {
+    window.location.reload(); // Reload the page
+  };
+
   const [sticky,setSticky] = useState(false);
 
   useEffect(()=>{
@@ -50,8 +56,8 @@ const Navbar = () => {
 
       <div className="logoandlinks">
         {/* Left section: User Login */}
-      <div className="navbar__login">
-        <img src={weblogo}  id="weblogo" alt="logo" />
+      <div className="navbar__login" onClick={handleLogoClick}>
+        <img src={weblogo}  id="weblogo" alt="logo"  />
         <div className="textforlogo">
         <p id="heading"> SOYRAA SOLAR</p>
         <p id='subheading'>Solar Water Heater System</p>
