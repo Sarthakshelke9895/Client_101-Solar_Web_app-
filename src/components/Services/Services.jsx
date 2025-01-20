@@ -7,14 +7,13 @@ import serviceslogo5 from '../../assets/serviceslogo5.png'
 import serviceslogo6 from '../../assets/serviceslogo6.png'
 
 
-import download1 from '../../assets/download1.JPG'
 import download2 from '../../assets/download2.JPG'
 import download3 from '../../assets/download3.JPG'
 import download4 from '../../assets/download4.JPG'
 import download5 from '../../assets/download5.JPG'
 import download6 from '../../assets/download6.JPG'
 import download7 from '../../assets/download7.JPG'
-import download8 from '../../assets/download8.JPG'
+
 import './Services.css'
 
 const Services = () => {

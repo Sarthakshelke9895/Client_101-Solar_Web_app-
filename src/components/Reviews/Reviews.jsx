@@ -6,11 +6,6 @@ import Logo3 from '../../assets/logo3.png';
 import Logo4 from '../../assets/logo4.png';
 
 
-
-
-import Contact from '../Contact/Contact'
-
-
 const Reviews = () => {
   return (
     <div className='Reviews'>
