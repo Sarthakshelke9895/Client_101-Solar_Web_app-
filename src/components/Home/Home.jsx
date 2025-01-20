@@ -5,6 +5,7 @@ import "./Home.css";
 import slide1 from "../../assets/slide1.jpg";
 import slide2 from "../../assets/slide2.jpg";
 
+
 const sliderContent = [
   {
     image: slide1,
@@ -83,6 +84,8 @@ function Home() {
         </div>
         
       </div>
+
+      
     </div>
   );
 }
