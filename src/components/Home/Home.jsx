@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
-import slide1 from "../../assets/slide1.jpg";
-import slide2 from "../../assets/slide2.jpg";
+import slide1 from "../../assets/download4.JPG";
+import slide2 from "../../assets/download6.JPG";
 
 
 const sliderContent = [
