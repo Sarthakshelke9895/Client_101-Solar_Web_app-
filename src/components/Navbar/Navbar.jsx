@@ -36,12 +36,12 @@ const Navbar = () => {
          <div className="topbar">
         <div className="location">
           <img src={location} alt="" className='images' />
-          <p>Mystique Wonders,B-Wing,Flat-no:503,narhe,Pune. </p>
+          <p>  Lane No. A30, Soyraa solar water heater, Laigude Mala, S. No. 152/32, near Muktai Gardan, Pokale Empire, Sitaee Nagar, Dhayari, Pune, Maharashtra 411041  </p>
         </div>
         <div className="socail_accounts">
           <div className="call">
           <img src={call} alt=""  className='images'/>
-        <p>+91 9359955164</p>
+        <p>+91 7798764878</p>
           </div>
        
         <img src={insta} alt=""  className='images'/>
