@@ -17,8 +17,8 @@ const Contact = () => {
         <h3>Our Contact Information</h3>
         <p>If you have any questions or feedback, feel free to get in touch with us. Below are our contact details:</p>
         <ul>
-          <li><img src={mail_icon}alt="Mail Icon"/>sarthakshelke044@gmail.com</li>
-          <li><img src={phone_icon} alt="Phone Icon"/>+91 9359955164 </li>
+          <li><img src={mail_icon}alt="Mail Icon"/> vb257650@gmail.com</li>
+          <li><img src={phone_icon} alt="Phone Icon"/>+91 7798764878 </li>
           <li><img src={location_icon} alt="Location Icon"/>Pune</li>
         </ul>
       </div>
